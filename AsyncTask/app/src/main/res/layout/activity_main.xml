@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F58F"
+    tools:context="com.example.zeeshan.asynctask.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_for_enter_data"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <EditText
+            android:layout_weight="2.25"
+            android:id="@+id/ed_enter_data"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:background="#ffffF1"/>
+        <Button
+            android:layout_weight="0.75"
+            android:id="@+id/button_add"
+            android:text="Add Data"
+            android:layout_width="0dp"
+            android:layout_height="75dp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="18sp"
+        android:layout_below="@+id/ll_for_enter_data"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#eae8c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content from file" />
+
+    <TextView
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_show_data"
+        android:textColor="#000000"
+        android:background="#303F9F"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Data from file" />
+    <Button
+        android:id="@+id/button_delete"
+        android:text="Delete File"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
